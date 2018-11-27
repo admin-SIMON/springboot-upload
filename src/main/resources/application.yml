@@ -1,0 +1,8 @@
+web:
+  #自定义文件上传目的地
+  upload-path: E:/Project-resources/
+  #自定义文件返回地址
+  domain: http://localhost:8080
+spring:
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,classpath:/test/,file:${web.upload-path}
